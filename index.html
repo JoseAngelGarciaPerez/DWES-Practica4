@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 4 - DWES</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+
+<body>
+    <h1 class="mb-4 p-4">Personajes de Harry Potter</h1>
+
+    <!-- BOTONES DE FILTRADO -->
+    <div class="mb-4 p-4">
+        <!-- Sin filtrado -->
+        <button class="btn btn-info" id="sinFiltros">Sin filtros</button>
+        <!-- Muestra a los humanos -->
+        <button class="btn btn-info" id="filtro1">Filtro 1 (human)</button>
+        <!-- Muestra a los nacidos antes de 1979 -->
+        <button class="btn btn-info" id="filtro2">Filtro 2 (1979)</button>
+        <!-- Muestra por varita -->
+        <button class="btn btn-info" id="filtro3">Filtro 3 (holly)</button>
+        <!-- Muestra a los vivos estudiantes de Hogwarts -->
+        <button class="btn btn-info" id="filtro4">Filtro 4 (alive/hogwarts)</button>
+        <!--  -->
+        <div id="mensaje"></div>
+    </div>
+
+    <div class="p-4">
+
+        <!-- TABLA DE PERSONAJES -->
+        <tbody id="tabla-personajes">
+            <!-- Division donde se añadiran los personajes segun su filtro -->
+            <div id="contenido"></div>
+        </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="cliente.js"></script>
+
+</body>
+
+</html>
